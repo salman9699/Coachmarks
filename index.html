@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Coach mark</title>
+</head>
+
+<body>
+  <div class="main-container">
+    <div class="btn-wrapper text-center">
+      <button type="button" class="btn btn-secondary start-btn" onclick="showCoachMark()">Click to know about legends</button>
+    </div>
+
+    <div class="card-wrapper">
+
+      <div class="card" id="vk">
+        <img class="card-img" src="assets/vk.jpg" alt="Card image">
+      </div>
+      <div class="card" id="cr7">
+        <img class="card-img" src="assets/cr7.jpg" alt="Card image">
+      </div>
+      <div class="card" id="usain">
+        <img class="card-img" src="assets/usain.jpg" alt="Card image">
+      </div>
+      <div class="card" id="khabib">
+        <img class="card-img" src="assets/khabib.jpeg" alt="Card image">
+      </div>
+    </div>
+    <div class="my-text">
+      <h5 class="p-3" >Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet vitae voluptatem, aut aperiam cupiditate ducimus fugit ab eos excepturi nesciunt id iusto officiis repellendus quam! Praesentium amet consectetur voluptatem ipsa?</h5>
+    </div>
+  </div>
+  <div class="coachmark">
+    <div class="coachmark__overlay" onclick="hideCoachMark()"></div>
+    <div class="coachmark__selector">
+      <div class="coachmark__content">
+        <div class="coachmark__header">
+          <h5>Title</h5>
+        </div>
+        <div class="coachmark__text py-2">
+          <p class="m-0">Text</p>
+        </div>
+        <div class="coachmark__footer">
+          <button type="button" class="btn btn-secondary back-btn" onclick="step('back')" >Back</button>
+          <button type="button" class="btn btn-secondary next-btn" onclick="step('next')">Next</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

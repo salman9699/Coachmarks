@@ -1,0 +1,78 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main-container {
+  position: relative;
+  width: 100%;
+  .btn-wrapper {
+    padding: 80px 0;
+    .start-btn {
+    }
+  }
+
+  .card-wrapper {
+    max-width: 925px;
+    // border: 1px solid;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    .card {
+      max-width: 200px;
+      width: 100%;
+      margin: 15px;
+    }
+  }
+}
+.coachmark {
+  display: none;
+  &.show {
+    display: block;
+  }
+  .coachmark__overlay{
+      position: absolute;
+      top:0;
+      left: 0;
+      width:100%;
+      height:100%;
+  }
+  .coachmark__selector {
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-shadow: #e5e5e5 0px 0px 1px 2px, rgba(0, 0, 0, 0.5) 0px 0px 0px 5000px;
+    transition: all 0.3s;
+  }
+}
+.coachmark__content {
+  background-color: #fff;
+  padding: 10px;
+  width: 300px;
+  position: absolute;
+  top: 105%;
+  left: 0;
+  border-radius: 4px;
+  .coachmark__header,.coachmark__text {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  .coachmark__footer{
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    button{
+        width: 120px;
+    }
+    .next-btn{
+        margin-left: auto;
+    }
+    .back-btn{
+        display: none;
+    }
+    
+  }
+}
